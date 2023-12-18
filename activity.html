@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Financial Reports and Analysis</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Activity Report</h1>
+    </header>
+    <section>
+        <h2>Your Financial Insights</h2>
+        <div class="graphs">
+            <!-- Insert interactive graphs here -->
+            <canvas id="myChart" width="400" height="200"></canvas>
+
+        </div>
+        <p>Detailed financial reports and analysis at your fingertips.</p>
+    </section>
+    <section>
+        <h2>Take Control of Your Finances</h2>
+        <p>Make informed decisions based on our insights.</p>
+        <button>Start Analyzing</button>
+    </section>
+    <footer>
+        <p>&copy; 2023 Budget Tracker</p>
+    </footer>
+    <script>
+        // Get the canvas element
+        var ctx = document.getElementById('myChart').getContext('2d');
+        
+        // Data for the chart (example data)
+        var data = {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+            datasets: [{
+                
+                label: 'Monthly Expenditure',
+                data: [1000, 1200, 1100, 1300, 1400],
+                borderColor: 'rgba(75, 192, 192, 1)', // Color of the line
+                borderWidth: 2 // Width of the line
+            
+            }]
+        };
+        
+        // Chart configuration
+        var config = {
+            type: 'line', // Type of chart
+            data: data,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        };
+        
+        // Create the chart
+        var myChart = new Chart(ctx, config);
+        </script>
+        
+</body>
+</html>

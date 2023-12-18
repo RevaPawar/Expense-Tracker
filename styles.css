@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(gif2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header, section {
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color: #090909;
+    background-color:#00BFFF;
+    background-size: 30 px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 54;
+}
+
+h2 {
+    color: #080808;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50;
+
+}
+
+.graphs {
+    /* Style your graphs and charts here */
+    border :2px solid;
+    background-color: aliceblue;
+}
+
+
+button {
+    background-color: #0d6dd2aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
